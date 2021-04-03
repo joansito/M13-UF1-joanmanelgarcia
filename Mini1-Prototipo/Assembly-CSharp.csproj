@@ -64,18 +64,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CollectionableCounter\Scripts\CollectionableBar.cs" />
-    <Compile Include="Assets\Healthbar\Scripts\HealthbarScript.cs" />
-    <Compile Include="Assets\Mini1-run\Scripts\Bullet.cs" />
-    <Compile Include="Assets\Mini1-run\Scripts\NPC.cs" />
-    <Compile Include="Assets\Mini1-run\Scripts\Player.cs" />
-    <Compile Include="Assets\Mini2-railCollect\Scripts\Collectionable.cs" />
-    <Compile Include="Assets\Mini2-railCollect\Scripts\Playermini2.cs" />
-    <Compile Include="Assets\Mini3-rings\Enemy.cs" />
-    <Compile Include="Assets\Mini3-rings\Movement.cs" />
-    <Compile Include="Assets\Mini3-rings\aro.cs" />
-    <Compile Include="Assets\ScorePoints\Scripts\ScorePoints.cs" />
-    <Compile Include="Assets\Timer\Scripts\Timer.cs" />
+    <Compile Include="Assets\GameSystem\CollectionableCounter\Scripts\CollectionableBar.cs" />
+    <Compile Include="Assets\GameSystem\Healthbar\Scripts\HealthbarScript.cs" />
+    <Compile Include="Assets\GameSystem\ScorePoints\Scripts\ScorePoints.cs" />
+    <Compile Include="Assets\GameSystem\Timer\Scripts\Timer.cs" />
+    <Compile Include="Assets\Minigames\Mini1-run\Scripts\BulletMin1Script.cs" />
+    <Compile Include="Assets\Minigames\Mini1-run\Scripts\NPCMin1Script.cs" />
+    <Compile Include="Assets\Minigames\Mini1-run\Scripts\PlayerMin1Script.cs" />
+    <Compile Include="Assets\Minigames\Mini2-railCollect\Scripts\CollectionableMin2Script.cs" />
+    <Compile Include="Assets\Minigames\Mini2-railCollect\Scripts\PlayerMin2Script.cs" />
+    <Compile Include="Assets\Minigames\Mini3-rings\Scripts\AroMin3Script.cs" />
+    <Compile Include="Assets\Minigames\Mini3-rings\Scripts\EnemyMin3Script.cs" />
+    <Compile Include="Assets\Minigames\Mini3-rings\Scripts\PlayerMin3Script.cs" />
+    <Compile Include="Assets\Scenes\MenuInicio\Scripts\MenuScript.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
