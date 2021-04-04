@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MenuInicio/MenuInicio.unity
+    guid: b77141698b556724197df0a0a9db38e6
+  - enabled: 1
+    path: Assets/Scenes/Mapa/MainMap.unity
+    guid: 873c7723c4071e8448205de0c0db3287
+  - enabled: 1
+    path: Assets/Minigames/Mini1-run/Mini1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Minigames/Mini2-railCollect/Mini2Scene.unity
+    guid: b230cda0e4877b24f88f924c26f2741b
+  - enabled: 1
+    path: Assets/Minigames/Mini3-rings/Mini3.unity
+    guid: f2590d7ca9969c64d87a46ddf567bce8
+  - enabled: 1
+    path: Assets/Minigames/Mini4-shake/Mini4.unity
+    guid: 7b6c3f72b0168b14ab5c6e6cea9debd4
   m_configObjects: {}

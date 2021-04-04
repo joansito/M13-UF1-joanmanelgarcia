@@ -76,6 +76,7 @@
     <Compile Include="Assets\Minigames\Mini3-rings\Scripts\AroMin3Script.cs" />
     <Compile Include="Assets\Minigames\Mini3-rings\Scripts\EnemyMin3Script.cs" />
     <Compile Include="Assets\Minigames\Mini3-rings\Scripts\PlayerMin3Script.cs" />
+    <Compile Include="Assets\Minigames\Mini4-shake\Scripts\PlayerMin4Script.cs" />
     <Compile Include="Assets\Scenes\MenuInicio\Scripts\MenuScript.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -280,6 +281,9 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>D:/Archivos de Programas HDD/Unity Editor/2019.4.21f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>D:/UnityProjects/M13-UF1-joanmanelgarcia/Mini1-Prototipo/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/Archivos de Programas HDD/Unity Editor/2019.4.21f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
