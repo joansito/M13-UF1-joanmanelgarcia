@@ -133,3 +133,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d71a5818cbef56468cd701dfab3b9a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aroBlack: {fileID: 8239952211073669721, guid: 693d10c60dcf9f445b9e888499ddac28,
+    type: 3}

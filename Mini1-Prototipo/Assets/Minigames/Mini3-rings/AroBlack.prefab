@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8239952211073669721}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.646, y: -0.816, z: 0}
+  m_LocalPosition: {x: -0.646, y: -0.816, z: 2}
   m_LocalScale: {x: 0.11017209, y: 0.11017209, z: 0.11017209}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70e5169966ceba42a4161c82a08ebb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refGiro: {fileID: 6997594681394475574, guid: 6eaefda93404f0548a6d647884fd48cc, type: 3}
-  vGiro: 80
+  refGiro: {fileID: 4887036226005107272, guid: b0bbf6854186baa43b395e2cd38ea334, type: 3}
+  vGiro: 20
 --- !u!58 &644022840206425291
 CircleCollider2D:
   m_ObjectHideFlags: 0

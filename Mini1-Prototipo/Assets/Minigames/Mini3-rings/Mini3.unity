@@ -410,6 +410,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5563182444743018823, guid: b0bbf6854186baa43b395e2cd38ea334,
+        type: 3}
+      propertyPath: refGiro
+      value: 
+      objectReference: {fileID: 921747019}
     - target: {fileID: 4887036226005107272, guid: b0bbf6854186baa43b395e2cd38ea334,
         type: 3}
       propertyPath: m_Name

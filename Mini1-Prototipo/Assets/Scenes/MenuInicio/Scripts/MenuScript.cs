@@ -1,18 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Button button;
     void Start()
     {
-        
+        if (this.gameObject.name == "btnJugar")
+        {
+            if (GetComponent<Button>())
+            {
+                button = GetComponent<Button>();
+                button.Select();
+            }
+
+
+        }
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OpenJugar() {
+        SceneManager.LoadScene(1);
+    }
+
+    public void OpenSalir()
     {
-        
+        Application.Quit();
+        Debug.Log("Estoy fuera");
     }
 }

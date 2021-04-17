@@ -12,6 +12,7 @@ public class PlayerMin1Script : MonoBehaviour
    HealthbarScript playerLives;
     ScorePoints playerPoints;
     CollectionableBar playerObjects;
+    
     public void Start()
     {
         playerLives = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<HealthbarScript>();

@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Minigames/Mini4-shake/Mini4.unity
     guid: 7b6c3f72b0168b14ab5c6e6cea9debd4
+  - enabled: 1
+    path: Assets/Scenes/Fases/Fase1/Fase1Scena1.unity
+    guid: 69f58ad7075f3904888ede5eb2410779
+  - enabled: 1
+    path: Assets/Scenes/Fases/Fase1/Fase1Scene2.unity
+    guid: d35bbfe39dd8af645a3665bd4f64053b
+  - enabled: 1
+    path: Assets/Scenes/Fases/Fase1/Fase1Scena3.unity
+    guid: 511a9ea7a040d7b40870650d89422987
   m_configObjects: {}
