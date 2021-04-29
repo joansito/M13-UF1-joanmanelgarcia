@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class NPCMin1Script : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject bullet;
+    GameObject player;
     public float vGiro;
     private float angle;
     private Vector2 dir;
     // Start is called before the first frame update
     void Start()
     {
+        player= GameObject.Find("player");
         InvokeRepeating("InstantiateBullet", 3.0f, 1.2f);
     }
 
@@ -33,7 +33,15 @@ public class NPCMin1Script : MonoBehaviour
 
     private void InstantiateBullet() {
 
-        Instantiate(bullet, new Vector2(this.transform.position.x,this.transform.position.y),Quaternion.identity);
-    
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject();
+
+        if (bullet != null)
+        {
+            bullet.transform.position = this.transform.position;
+            bullet.transform.rotation = transform.rotation;
+            bullet.transform.right = transform.right.normalized;
+            bullet.SetActive(true);
+        }
+
     }
 }

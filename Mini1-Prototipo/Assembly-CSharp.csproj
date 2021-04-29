@@ -70,6 +70,7 @@
     <Compile Include="Assets\GameSystem\Timer\Scripts\Timer.cs" />
     <Compile Include="Assets\Minigames\Mini1-run\Scripts\BulletMin1Script.cs" />
     <Compile Include="Assets\Minigames\Mini1-run\Scripts\NPCMin1Script.cs" />
+    <Compile Include="Assets\Minigames\Mini1-run\Scripts\ObjectPool.cs" />
     <Compile Include="Assets\Minigames\Mini1-run\Scripts\PlayerMin1Script.cs" />
     <Compile Include="Assets\Minigames\Mini2-railCollect\Scripts\CollectionableMin2Script.cs" />
     <Compile Include="Assets\Minigames\Mini2-railCollect\Scripts\PlayerMin2Script.cs" />

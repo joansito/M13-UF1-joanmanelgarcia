@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4728033271909997689}
   - component: {fileID: 4728033271909997692}
   - component: {fileID: 1134897734106042723}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Proyectil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   a: {fileID: 4728033271909997689}
-  player: {fileID: 7873621854595840199, guid: c54b07ac5863feb459c31a0a1d0f724b, type: 3}
   delanteSpeed: 3.82
 --- !u!58 &1134897734106042723
 CircleCollider2D:
