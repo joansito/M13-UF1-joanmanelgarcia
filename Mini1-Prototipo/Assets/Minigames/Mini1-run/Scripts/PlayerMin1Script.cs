@@ -24,8 +24,14 @@ public class PlayerMin1Script : MonoBehaviour
         playerPoints= GameObject.FindGameObjectWithTag("ScoreBar").GetComponent<ScorePoints>();
         playerObjects = GameObject.FindGameObjectWithTag("CollectionableBar").GetComponent<CollectionableBar>();
     }
+
+    public void Update()
+    {
+        
+    }
     void FixedUpdate()
     {
+       
         muerto = playerLives.getMuerte();
         if (muerto) { print("muerto"); }
         moveKeys();
@@ -55,6 +61,7 @@ public class PlayerMin1Script : MonoBehaviour
         }
 
     }
+   
 
     public void OnTriggerEnter2D(Collider2D collision)
     {

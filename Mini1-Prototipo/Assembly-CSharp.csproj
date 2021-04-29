@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\GameSystem\CollectionableCounter\Scripts\CollectionableBar.cs" />
     <Compile Include="Assets\GameSystem\Healthbar\Scripts\HealthbarScript.cs" />
+    <Compile Include="Assets\GameSystem\PauseMenu\PauseMenu.cs" />
     <Compile Include="Assets\GameSystem\ScorePoints\Scripts\ScorePoints.cs" />
     <Compile Include="Assets\GameSystem\Timer\Scripts\Timer.cs" />
     <Compile Include="Assets\Minigames\Mini1-run\Scripts\BulletMin1Script.cs" />
