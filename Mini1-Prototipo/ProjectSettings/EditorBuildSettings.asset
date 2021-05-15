@@ -32,4 +32,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fases/Fase1/Fase1Scena3.unity
     guid: 511a9ea7a040d7b40870650d89422987
+  - enabled: 1
+    path: Assets/GameSystem/GameOver/GameOver.unity
+    guid: 0a318572d0a14974a921574b88b8641c
+  - enabled: 1
+    path: Assets/GameSystem/WinScreen/WinScreen.unity
+    guid: 43550dc55994b214baf155063277676b
+  - enabled: 1
+    path: Assets/Scenes/Mapa/1-1.unity
+    guid: 98ed153aaa200284bbb29a3bf97c5fda
+  - enabled: 1
+    path: Assets/Scenes/Mapa/2-1.unity
+    guid: f933d09c2931e4645b43f0728dee89cf
+  - enabled: 1
+    path: Assets/Scenes/Mapa/3-1.unity
+    guid: 245f27d2efdec3647883a29da8044d2f
   m_configObjects: {}

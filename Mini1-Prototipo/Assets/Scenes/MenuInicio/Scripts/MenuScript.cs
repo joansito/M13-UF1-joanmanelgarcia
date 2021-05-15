@@ -6,9 +6,13 @@ using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
+    public GameObject opciones;
+    public GameObject menu;
+    public GameObject slider;
     Button button;
     void Start()
     {
+        
         if (this.gameObject.name == "btnJugar")
         {
             if (GetComponent<Button>())
@@ -21,6 +25,19 @@ public class MenuScript : MonoBehaviour
         }
 
 
+    }
+  
+    public void OpenOpciones() {
+        menu.SetActive(false);
+        opciones.SetActive(true);
+        slider.SetActive(true);
+    }
+
+    public void SalirOpciones()
+    {
+        slider.SetActive(false);
+        menu.SetActive(true);
+        opciones.SetActive(false);
     }
 
     public void OpenJugar() {

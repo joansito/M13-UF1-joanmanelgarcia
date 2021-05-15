@@ -8,6 +8,9 @@ TagManager:
   - ScoreBar
   - CollectionableBar
   - Fase
+  - Enemy
+  - Timer
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -21,10 +24,10 @@ TagManager:
   - Enemy
   - Shoot
   - Fase
-  - 
-  - 
-  - 
-  - 
+  - Zone
+  - Exit
+  - Obstacle
+  - Trigger
   - 
   - 
   - 

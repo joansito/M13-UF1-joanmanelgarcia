@@ -24,4 +24,7 @@ public class ScorePoints : MonoBehaviour
     {
         puntosTotales += puntos;
     }
+    public int getPuntos() {
+        return puntosTotales;
+    }
 }

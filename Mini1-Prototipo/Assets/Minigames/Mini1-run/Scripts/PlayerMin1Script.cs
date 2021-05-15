@@ -1,41 +1,72 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMin1Script : MonoBehaviour
 {
-   public float giroVelocity = 1;
+    float randomX;
+    float randomY;
+    public GameObject enemy;
+    public float giroVelocity = 1;
    public float delanteSpeed = 0.06f;
    public Rigidbody2D a;
    bool muerto;
     GameObject rightBarrier, leftBarrier, topBarrier, bottomBarrier;
-
-   HealthbarScript playerLives;
+    bool invencible;
+    Animator m_Animator;
+    HealthbarScript playerLives;
     ScorePoints playerPoints;
     CollectionableBar playerObjects;
+    TimerPrefab timerObject;
+    bool terminado;
     
     public void Start()
     {
-        bottomBarrier= GameObject.Find("bottomBarrier");
+        muerto = false;
+        PlayerPrefs.SetInt("PantallaReinicio", 2);
+        PlayerPrefs.SetInt("PantallaSalida", 12);
+        PlayerPrefs.SetInt("puntosTemp", 0);
+        invencible = false;
+        m_Animator= gameObject.GetComponent<Animator>();
+        bottomBarrier = GameObject.Find("bottomBarrier");
         topBarrier = GameObject.Find("topBarrier");
         rightBarrier = GameObject.Find("rightBarrier");
         leftBarrier = GameObject.Find("leftBarrier");
         playerLives = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<HealthbarScript>();
         playerPoints= GameObject.FindGameObjectWithTag("ScoreBar").GetComponent<ScorePoints>();
-        playerObjects = GameObject.FindGameObjectWithTag("CollectionableBar").GetComponent<CollectionableBar>();
+        //playerObjects = GameObject.FindGameObjectWithTag("CollectionableBar").GetComponent<CollectionableBar>();
+        timerObject = GameObject.FindGameObjectWithTag("Timer").GetComponent<TimerPrefab>();
     }
 
     public void Update()
     {
-        
+        terminado = timerObject.getTerminado();
+        if (terminado&&!muerto) {
+            PlayerPrefs.SetInt("puntosTemp", playerPoints.getPuntos());
+            print("Terminado");
+                int playertemp = PlayerPrefs.GetInt("puntosTemp");
+                int puntosF1 = PlayerPrefs.GetInt("puntosF1");
+                if (puntosF1 < playertemp) {
+                    PlayerPrefs.SetInt("puntosF1",playertemp);
+                    
+                }
+            SceneManager.LoadScene(10);
+
+        }
     }
     void FixedUpdate()
     {
-       
         muerto = playerLives.getMuerte();
-        if (muerto) { print("muerto"); }
+        if (muerto) {
+
+            PlayerPrefs.SetInt("puntosTemp", playerPoints.getPuntos());
+            print("muerto");
+            SceneManager.LoadScene(9);
+        }
         moveKeys();
     }
+    
     private void moveKeys() {
 
         if (Input.GetKey("a")) {
@@ -61,7 +92,13 @@ public class PlayerMin1Script : MonoBehaviour
         }
 
     }
-   
+    IEnumerator Invencible() {
+        m_Animator.SetBool("invencible", true);
+        invencible = true;
+        yield return new WaitForSeconds(2f);
+        m_Animator.SetBool("invencible", false);
+        invencible = false;
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -75,15 +112,22 @@ public class PlayerMin1Script : MonoBehaviour
         }
         else if (collision.gameObject.layer == 10)
         {
-            collision.gameObject.SetActive(false);
-            print("disparorecibido");
-            if (!muerto)
+            if (!invencible)
             {
-                playerLives.setVida(-1);
+                collision.gameObject.SetActive(false);
+                StartCoroutine("Invencible");
+                print("disparorecibido");
+                if (!muerto)
+                {
+                    playerLives.setVida(-1);
+                }
             }
+            print("disparorecibido");
         }
         else if (collision.gameObject.layer == 9)
         {
+
+            playerPoints.setPuntos(100);
             Destroy(collision.gameObject);
             print("mataEnemigo");
         }

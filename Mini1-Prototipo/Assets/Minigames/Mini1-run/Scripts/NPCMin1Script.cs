@@ -12,7 +12,7 @@ public class NPCMin1Script : MonoBehaviour
     void Start()
     {
         player= GameObject.Find("player");
-        InvokeRepeating("InstantiateBullet", 3.0f, 1.2f);
+        InvokeRepeating("InstantiateBullet", 3.0f, 2.5f);
     }
 
     // Update is called once per frame
@@ -25,10 +25,6 @@ public class NPCMin1Script : MonoBehaviour
         
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward.normalized*vGiro);
 
-        /*Vector2 playerPos = player.transform.position;
-        Vector2 direction = new Vector2(playerPos.x - transform.position.x, playerPos.y - transform.position.y);
-
-        transform.up = direction;*/
     }
 
     private void InstantiateBullet() {

@@ -8,8 +8,13 @@ public class CollectionableMin2Script : MonoBehaviour
   
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         this.transform.position -=new Vector3(speedCollect, 0);
+    }
+
+    void OnBecameInvisible()
+    {
+       Destroy(this.gameObject);
     }
 }
