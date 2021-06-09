@@ -29,8 +29,8 @@ public class Instantiate1 : MonoBehaviour
     void InstantiateEnemy()
     {
         if (count<maxPantalla) {
-            int number = Random.RandomRange(1, 2);
-            time = Random.Range(3, 6);
+            int number = Random.Range(1, 2);
+            time = Random.Range(2, 4);
             Invoke("InstantiateEnemy", time);
             for (int i = 0; i < number; i++)
             {

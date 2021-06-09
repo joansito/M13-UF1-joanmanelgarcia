@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "9699372396",
+    "project_id": "unitysallefinal",
+	"firebase_url": "https://unitysallefinal-default-rtdb.europe-west1.firebasedatabase.app/",
+    "storage_bucket": "unitysallefinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9699372396:android:96cdb2383a429ae4071749",
+        "android_client_info": {
+          "package_name": "com.ProyectoMin1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9699372396-klv44898i882sll1fuvpr44o41aa76ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChDm9FWK8aD8fwKmd2zPY1QNFXpd9FCo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9699372396-klv44898i882sll1fuvpr44o41aa76ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

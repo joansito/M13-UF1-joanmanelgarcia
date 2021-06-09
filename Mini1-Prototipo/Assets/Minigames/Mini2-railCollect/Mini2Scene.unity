@@ -688,7 +688,7 @@ PrefabInstance:
     - target: {fileID: 720562568891359914, guid: 49a5c02d419a6ef479ba3ee370056ae6,
         type: 3}
       propertyPath: segundosFloat
-      value: 10
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 2726535487879096000, guid: 49a5c02d419a6ef479ba3ee370056ae6,
         type: 3}

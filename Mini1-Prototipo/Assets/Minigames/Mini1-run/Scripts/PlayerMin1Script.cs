@@ -43,6 +43,9 @@ public class PlayerMin1Script : MonoBehaviour
     {
         terminado = timerObject.getTerminado();
         if (terminado&&!muerto) {
+            if (PlayerPrefs.GetInt("unlock")==0) {
+                PlayerPrefs.SetInt("unlock", 1);
+            }
             PlayerPrefs.SetInt("puntosTemp", playerPoints.getPuntos());
             print("Terminado");
                 int playertemp = PlayerPrefs.GetInt("puntosTemp");

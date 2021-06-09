@@ -60,13 +60,11 @@ public class MapaPlayerScript : MonoBehaviour
         {
 
             SceneManager.LoadScene(6);
-            fase1Script.setCompletado();
         }
         else if (collision.gameObject.layer == 4)
         {
 
             SceneManager.LoadScene(6);
-            fase1Script.setCompletado();
         }
         else if (collision.gameObject.layer == 12)
         {
@@ -81,12 +79,22 @@ public class MapaPlayerScript : MonoBehaviour
                 case "3-1":
                     SceneManager.LoadScene(13);
                     break;
-                case "Min1": //cambiar este porque es el ultimo minijuego*/
+                case "4-1":
+                    SceneManager.LoadScene(17);
+                    break;
+                case "Min3": 
+                    SceneManager.LoadScene(15);
+                    break;
+                case "Min1":
                     SceneManager.LoadScene(2);
                     break;
                 case "Min2":
                     SceneManager.LoadScene(3);
                     break;
+                case "Min4":
+                    SceneManager.LoadScene(5);
+                    break;
+
             }
         }
         else if (collision.gameObject.layer == 13) {

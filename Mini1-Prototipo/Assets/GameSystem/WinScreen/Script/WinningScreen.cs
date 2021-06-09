@@ -20,8 +20,18 @@ public class WinningScreen : MonoBehaviour
             recordText.text = "Record:   " + PlayerPrefs.GetInt("puntosF1").ToString();
             actualText.text = "Puntos totales:   " + PlayerPrefs.GetInt("puntosTemp").ToString();
         }
-      
-}
+        else if (checkPantalla == 15)
+        {
+            recordText.text = "Record:   " + PlayerPrefs.GetInt("puntosF3").ToString();
+            actualText.text = "Puntos totales:   " + PlayerPrefs.GetInt("puntosTemp").ToString();
+        }
+        else if (checkPantalla == 5)
+        {
+            recordText.text = "Record:   " + PlayerPrefs.GetInt("puntosF4").ToString();
+            actualText.text = "Puntos totales:   " + PlayerPrefs.GetInt("puntosTemp").ToString();
+        }
+
+    }
 
     // Update is called once per frame
     void Update()

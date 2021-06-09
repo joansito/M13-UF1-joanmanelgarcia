@@ -12,8 +12,9 @@ public class MenuScript : MonoBehaviour
     Button button;
     void Start()
     {
-        
-        if (this.gameObject.name == "btnJugar")
+        //hay que cambiar esta parte
+
+       /* if (this.gameObject.name == "btnJugar")
         {
             if (GetComponent<Button>())
             {
@@ -22,7 +23,7 @@ public class MenuScript : MonoBehaviour
             }
 
 
-        }
+        }*/
 
 
     }

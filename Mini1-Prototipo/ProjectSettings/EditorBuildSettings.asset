@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenuInicio/MenuInicio.unity
-    guid: b77141698b556724197df0a0a9db38e6
+    path: Assets/GameSystem/Login/Scripts/Login.unity
+    guid: d7b943545539c6748b741103687800b7
   - enabled: 1
     path: Assets/Scenes/Mapa/MainMap.unity
     guid: 873c7723c4071e8448205de0c0db3287
@@ -47,4 +47,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mapa/3-1.unity
     guid: 245f27d2efdec3647883a29da8044d2f
+  - enabled: 1
+    path: Assets/Scenes/MenuInicio/MenuInicio.unity
+    guid: b77141698b556724197df0a0a9db38e6
+  - enabled: 1
+    path: Assets/Minigames/Mini5-Shoot/mini5-Shoot.scene.unity
+    guid: 4a00d777f7e1f3547b2b364b4e6620b2
+  - enabled: 1
+    path: Assets/Minigames/Min6-Shoot2/Min6-Scene.unity
+    guid: b160eb1dd363d744aaa07acc48cc24ea
+  - enabled: 1
+    path: Assets/Scenes/Mapa/4-1.unity
+    guid: aa67b72f816e87240a8c5be4e379e66b
   m_configObjects: {}

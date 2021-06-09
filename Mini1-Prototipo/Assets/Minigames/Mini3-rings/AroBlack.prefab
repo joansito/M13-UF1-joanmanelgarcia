@@ -95,8 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70e5169966ceba42a4161c82a08ebb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refGiro: {fileID: 4887036226005107272, guid: b0bbf6854186baa43b395e2cd38ea334, type: 3}
-  vGiro: 20
+  refGiro: {fileID: 6997594681394475574, guid: 6eaefda93404f0548a6d647884fd48cc, type: 3}
+  player: {fileID: 4887036226005107272, guid: b0bbf6854186baa43b395e2cd38ea334, type: 3}
+  vGiro: 40
 --- !u!58 &644022840206425291
 CircleCollider2D:
   m_ObjectHideFlags: 0

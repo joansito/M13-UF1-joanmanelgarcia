@@ -8,7 +8,7 @@ public class EnemyMin3Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("instantiateAro", 2, 3);
+        //InvokeRepeating("instantiateAro", 2, 3);
     }
 
     // Update is called once per frame
